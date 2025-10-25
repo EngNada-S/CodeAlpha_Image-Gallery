@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>CodeAlpha | Image Gallery</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="logo">
+            <i class="fa-regular fa-camera"></i>
+            <span>Image Gallery</span>
+        </div>
+        <div class="theme">
+            <img src="images/sun.png" alt="sun">
+        </div>
+    </header>
+    <main>
+        <section class="categories">
+            <ul>
+                <li class="active" data-cat="all">All</li>
+                <li data-cat="nature">Nature</li>
+                <li data-cat="animals">Animals</li>
+                <li data-cat="food">Food</li>
+                <li data-cat="travel">Travel</li>
+            </ul>
+        </section>
+        <section class="container">
+            <div class="gallery"></div>
+        </section>
+        <section class="viewer">
+            <button class="closeViewer">&times;</button>
+            <div class="img-holder">
+                <div class="previous" onclick="handlePrevious()">&lt;</div>
+                <img src="images/10.jpg" alt="">
+                <div class="next" onclick="handleNext()">&gt;</div>
+            </div>
+        </section>
+    </main>
+    <footer class="container">@2025 <a href="https://www.codealpha.tech/" target="_blank"><b>CodeAlpha</b></a> Frontend Development
+        Internship</footer>
+    <span class="top">^</span>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
